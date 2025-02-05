@@ -6,7 +6,8 @@ import { AccessTokenProvider } from './components/AccessTokenContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AccessTokenProvider>
-    <App />
+    <App/>
+    
   </AccessTokenProvider>
 );
 
