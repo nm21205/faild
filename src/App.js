@@ -9,6 +9,7 @@ import UploadPage from './pages/UploadPage';
 import Products from './components/Products';
 import ProductDetail from './pages/ProductDetail';
 import { AccessTokenProvider } from './components/AccessTokenContext';
+import './App.scss';
 
 function App() {
   return (

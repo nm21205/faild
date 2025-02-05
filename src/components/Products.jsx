@@ -44,7 +44,7 @@ const Products = () => {
             products.map((product) => (
               <tr key={product.id} onClick={() => navigate(`/products/${product.id}`)}>
                 <td>{product.name}</td>
-                <td>{user_id || '알 수 없음'}</td> {/* user_id가 없을 경우 대체 텍스트 사용 */}
+                <td>{product.seller || '알 수 없음'}</td>
                 <td>{product.createdAt}</td>
               </tr>
             ))

@@ -1,0 +1,123 @@
+.signWrap{
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+li{
+  
+}
+
+.area-style {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.id-area,
+.pw-area,
+.pw2-area,
+.name-area,
+.phone-area,
+.email-area,
+.birth-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label-style {
+  flex: 0 0 100px; /* 레이블의 고정 너비 */
+  margin-right: 10px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  flex: 1; /* 입력 필드가 남은 공간을 차지 */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.id-check-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.id-check-button:hover {
+  background-color: #0056b3;
+}
+
+.mes-style {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.help-style {
+  font-size: 0.8em;
+  color: #888;
+  margin-top: 5px;
+}
+
+.termsBox {
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.check-style {
+  margin-left: 10px;
+}
+
+.submit-style {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-style:hover {
+  background-color: #218838;
+}
+
+#terms-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#terms-section h3 {
+  margin: 10px 0;
+}
+
+#terms-section p {
+  margin: 5px 0;
+}

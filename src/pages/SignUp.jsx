@@ -3,6 +3,7 @@ import { IoCheckmark } from "react-icons/io5";
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
 import {API_URL} from '../config/constants';
+import './SignUp.scss';
 
  
 
@@ -258,9 +259,13 @@ const SignUp = () => {
           <ul>
             <li className="id-section">
               <div className="area-style">
-                <label htmlFor="idArea" className='label-style'>아이디</label>
+                <div className='id-area'>
+                <label htmlFor="idArea" className='label-style'>아이디: 
+                </label>
                 <input ref={idInputRef} type="text" id="idArea" required size={20} value={id} onChange={(event) => {setId(event.target.value)}} onBlur={handleId} />
                 <button type="button" onClick={handleIdCheck} className='id-check-button'>중복확인</button>
+                </div>
+                
                 <span className={`mes-style ${messages.id.color}`}>{messages.id.text}</span>
                 <p className="help-style"><IoCheckmark />영문소문자/숫자, 4-16자</p>
               </div>
